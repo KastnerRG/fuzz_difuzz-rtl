@@ -5,7 +5,7 @@ CWD=$(shell pwd)
 SIM=verilator
 CMD=verilator
 
-PYTHONPATH := $(CWD)/src:$(CWD)/RTLSim/src:$(PYTHONPATH)
+export PYTHONPATH := $(CWD):$(CWD)/src:$(CWD)/RTLSim/src:$(PYTHONPATH)
 
 TOPLEVEL_LAGN ?= verilog
 
